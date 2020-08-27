@@ -1,4 +1,5 @@
 <?php
+
 namespace src\Commands;
 
 class SumCommand implements CommandInterface

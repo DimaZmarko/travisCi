@@ -1,4 +1,5 @@
 <?php
+
 namespace tests\Unit;
 
 use \PHPUnit\Framework\TestCase;

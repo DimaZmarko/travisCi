@@ -1,4 +1,5 @@
 <?php
+
 namespace tests\Unit;
 
 use \PHPUnit\Framework\TestCase;
@@ -30,7 +31,8 @@ class CalculatorTest extends TestCase
      *
      * @return \PHPUnit\Framework\MockObject\MockObject
      */
-    public function getCommandMock() {
+    public function getCommandMock()
+    {
         return $this->getMockBuilder(CommandInterface::class)
             ->getMock();
     }
@@ -66,14 +68,14 @@ class CalculatorTest extends TestCase
     public function testAddCommandPositive()
     {
         $this->calc->addCommand('valid', $this->getCommandMock());
-        $this->assertAttributeEquals(['valid' => $this->getCommandMock()] ,'commands' , $this->calc);
+        $this->assertAttributeEquals(['valid' => $this->getCommandMock()], 'commands', $this->calc);
     }
 
     /**
      * TODO: Check whether intents = []
      * TODO: Check whether value = expected
      *
-     * @see PHPUnit :: assertAttributeEquals
+     * @see    PHPUnit :: assertAttributeEquals
      *
      * @covers \src\Calculator::init()
      */
@@ -82,13 +84,13 @@ class CalculatorTest extends TestCase
         $this->calc->init();
 
         $this->assertAttributeEquals(0, 'value', $this->calc);
-        $this->assertAttributeEquals([],'intents', $this->calc);
+        $this->assertAttributeEquals([], 'intents', $this->calc);
     }
 
     /**
      * TODO: Check hasCommand exception
      *
-     * @see PHPUnit :: dataProvider
+     * @see    PHPUnit :: dataProvider
      *
      * @covers \src\Calculator::compute()
      */
@@ -102,7 +104,7 @@ class CalculatorTest extends TestCase
     /**
      * TODO: Check whether command and arguments have appeared in the intents array
      *
-     * @see PHPUnit :: assertAttributeEquals
+     * @see    PHPUnit :: assertAttributeEquals
      *
      * @covers \src\Calculator::compute()
      */
@@ -168,7 +170,7 @@ class CalculatorTest extends TestCase
             ->compute('+', 4)
             ->replay();
 
-        $this->assertAttributeEquals([[$command, [4]],[$command, [4]],], 'intents', $this->calc);
+        $this->assertAttributeEquals([[$command, [4]], [$command, [4]],], 'intents', $this->calc);
     }
 
     /**
