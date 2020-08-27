@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1559575105">
+  <project timestamp="1559575105">
+    <package name="src">
+      <file name="W:\domains\simple\src/Calculator.php">
+        <class name="src\Calculator" namespace="src">
+          <metrics complexity="14" methods="10" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="26" elements="40" coveredelements="34"/>
+        </class>
+        <line num="29" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="37" type="method" name="reset" visibility="private" complexity="1" crap="1" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="52" type="method" name="addCommand" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="54" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="62" type="stmt" count="1"/>
+        <line num="72" type="method" name="init" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="74" type="stmt" count="2"/>
+        <line num="76" type="stmt" count="2"/>
+        <line num="78" type="stmt" count="2"/>
+        <line num="90" type="method" name="compute" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="92" type="stmt" count="2"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="103" type="method" name="getCommand" visibility="private" complexity="2" crap="6.00" count="0"/>
+        <line num="105" type="stmt" count="0"/>
+        <line num="106" type="stmt" count="0"/>
+        <line num="109" type="stmt" count="0"/>
+        <line num="117" type="method" name="hasCommand" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="119" type="stmt" count="0"/>
+        <line num="127" type="method" name="undo" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="129" type="stmt" count="1"/>
+        <line num="131" type="stmt" count="1"/>
+        <line num="139" type="method" name="replay" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="141" type="stmt" count="1"/>
+        <line num="142" type="stmt" count="1"/>
+        <line num="145" type="stmt" count="1"/>
+        <line num="147" type="stmt" count="1"/>
+        <line num="156" type="method" name="getResult" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="158" type="stmt" count="2"/>
+        <line num="160" type="stmt" count="2"/>
+        <line num="161" type="stmt" count="2"/>
+        <line num="164" type="stmt" count="2"/>
+        <line num="167" type="stmt" count="1"/>
+        <metrics loc="169" ncloc="99" classes="1" methods="10" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="26" elements="40" coveredelements="34"/>
+      </file>
+    </package>
+    <file name="W:\domains\simple\src/Commands/CommandInterface.php">
+      <metrics loc="15" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <package name="src\Commands">
+      <file name="W:\domains\simple\src/Commands/SubCommand.php">
+        <class name="src\Commands\SubCommand" namespace="src\Commands">
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        </class>
+        <line num="9" type="method" name="execute" visibility="public" complexity="2" crap="2" count="5"/>
+        <line num="11" type="stmt" count="5"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="4"/>
+        <metrics loc="17" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </file>
+      <file name="W:\domains\simple\src/Commands/SumCommand.php">
+        <class name="src\Commands\SumCommand" namespace="src\Commands">
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        </class>
+        <line num="9" type="method" name="execute" visibility="public" complexity="2" crap="2" count="5"/>
+        <line num="11" type="stmt" count="5"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="4"/>
+        <metrics loc="17" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </file>
+    </package>
+    <metrics files="4" loc="218" ncloc="134" classes="3" methods="12" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="32" elements="48" coveredelements="42"/>
+  </project>
+</coverage>
