@@ -12,7 +12,7 @@ before_install:
 # Testing the app (see phpunit.xml) for configs, generating Code Coverage report
 # Note: Code coverage requires php-xDebug extension enabled on CI server
 script:
-  - phpunit --bootstrap vendor/autoload.php tests
+  - vendor/bin/phpunit --bootstrap vendor/autoload.php tests
 
 #after_success:
 
